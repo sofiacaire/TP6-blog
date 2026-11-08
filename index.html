@@ -25,18 +25,6 @@
 <body>
   <a class="skip" href="#main">Saltar al contenido</a>
 
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <symbol id="mock" viewBox="0 0 320 200">
-      <rect width="320" height="200" fill="var(--c)" />
-      <rect x="24" y="24" width="272" height="152" rx="10" fill="#fff" />
-      <rect x="40" y="40" width="90" height="12" rx="6" fill="var(--c)" />
-      <rect x="40" y="64" width="150" height="8" rx="4" fill="#c9d1cd" />
-      <rect x="40" y="80" width="120" height="8" rx="4" fill="#c9d1cd" />
-      <rect x="40" y="108" width="72" height="26" rx="13" fill="#4A1833" />
-      <rect x="210" y="40" width="70" height="120" rx="8" fill="var(--c)" opacity=".35" />
-    </symbol>
-  </svg>
-
   <header class="site-header">
     <div class="wrap bar">
       <a class="logo" href="#top" aria-label="Sofía Caire, ir al inicio">SC</a>
@@ -56,6 +44,22 @@
 
   <main id="main">
     <section class="hero" id="top">
+      <svg class="hero-art" viewBox="0 0 500 700" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <pattern id="hero-dots" width="8" height="8" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="2" fill="#F4A8C8" />
+          </pattern>
+          <linearGradient id="hero-dot-fade" x1="0" y1="0" x2="500" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="black" />
+            <stop offset=".3" stop-color="#555" />
+            <stop offset="1" stop-color="white" />
+          </linearGradient>
+          <mask id="hero-dots-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="500" height="700">
+            <rect width="500" height="700" fill="url(#hero-dot-fade)" />
+          </mask>
+        </defs>
+        <path fill="url(#hero-dots)" mask="url(#hero-dots-mask)" d="M0 0H500V700H0Z" />
+      </svg>
       <div class="wrap">
         <p class="badge"><span aria-hidden="true" class="dot"></span>Disponible para pasantías y proyectos freelance</p>
         <h1>Sofía Caire<br></h1>
@@ -80,7 +84,7 @@
           <p>proyectos terminados</p>
         </div>
         <div>
-          <p class="num">4</p>
+          <p class="num">6</p>
           <p>herramientas de diseño y código</p>
         </div>
         <div>
@@ -131,7 +135,7 @@
               <li>Git</li>
               <li>GitHub Pages</li>
               <li>Lighthouse</li>
-              <li>axe</li>
+              <li>Axe</li>
             </ul>
           </article>
         </div>
@@ -142,32 +146,59 @@
       <div class="wrap">
         <h2>Proyectos</h2>
         <div class="grid3">
-          <article class="card project" style="--c:#E6A7C2">
-            <svg viewBox="0 0 320 200" width="320" height="200" role="img" aria-label="Vista previa de Coffee Landing"
-              loading="lazy">
-              <use href="#mock" />
-            </svg>
-            <p class="year">Landing page · Café</p>
+          <article class="card project">
+            <div class="project-preview coffee-preview">
+              <img src="https://sofia-caire.netlify.app/assets/img/hero.jpg" alt="" loading="lazy">
+              <div class="coffee-preview__content" aria-hidden="true">
+                <span>WELCOME</span>
+                <strong>We serve the richest coffee in the city!</strong>
+                <span class="coffee-preview__button">Order Now</span>
+              </div>
+            </div>
+            <p class="year">2026 · Landing page · Café</p>
             <h3><a class="stretch" href="https://sofia-caire.netlify.app/" target="_blank"
                 rel="noopener noreferrer">Coffee Landing</a></h3>
-            <p>Landing page para Coffee.</p>
+            <p>Landing page de cafetería con menú de cafés y postres, promociones y suscripción a novedades.</p>
+            <p class="result"><strong>Resultado:</strong> la oferta queda organizada en secciones para facilitar la
+              exploración del menú y las promociones.</p>
             <ul class="chips">
               <li>Landing page</li>
               <li>Café</li>
             </ul>
           </article>
-          <article class="card project" style="--c:#F4A8C8">
-            <svg viewBox="0 0 320 200" width="320" height="200" role="img"
-              aria-label="Vista previa del sitio web de Cubri Seguros" loading="lazy">
-              <use href="#mock" />
-            </svg>
-            <p class="year">Sitio web · Seguros</p>
+          <article class="card project">
+            <div class="project-preview">
+              <iframe src="https://cubriseguros-caire.netlify.app/" title="Vista previa de Cubri Seguros" loading="lazy"
+                tabindex="-1" aria-hidden="true"></iframe>
+            </div>
+            <p class="year">2026 · Sitio web · Seguros</p>
             <h3><a class="stretch" href="https://cubriseguros-caire.netlify.app/" target="_blank"
                 rel="noopener noreferrer">Cubri Seguros</a></h3>
-            <p>Sitio web de Cubri Seguros.</p>
+            <p>Sitio de seguros que presenta coberturas para celular, hogar, bicicleta y viaje, con contratación online.
+            </p>
+            <p class="result"><strong>Resultado:</strong> la propuesta destaca la cotización online para celulares y
+              distingue las coberturas disponibles de las que llegarán próximamente.</p>
             <ul class="chips">
               <li>Diseño web</li>
               <li>Seguros</li>
+            </ul>
+          </article>
+          <article class="card project">
+            <div class="project-preview">
+              <iframe src="https://sofiacaire-blog.netlify.app/" title="Vista previa de Este proyecto" loading="lazy"
+                tabindex="-1" aria-hidden="true"></iframe>
+            </div>
+            <p class="year">2026 · Portfolio</p>
+            <h3><a class="stretch" href="https://sofiacaire-blog.netlify.app/" target="_blank"
+                rel="noopener noreferrer">Este proyecto</a></h3>
+            <p>Portfolio personal que reúne mi perfil, habilidades, formación y proyectos de UX/UI y desarrollo
+              front-end.</p>
+            <p class="result"><strong>Resultado:</strong> presenta mi trabajo y experiencia en un solo sitio, con
+              acceso directo a los proyectos y formas de contacto.</p>
+            <ul class="chips">
+              <li>Portfolio</li>
+              <li>UX/UI</li>
+              <li>Front-end</li>
             </ul>
           </article>
         </div>
@@ -251,28 +282,9 @@
     </section>
   </main>
 
-  <dialog id="case" aria-labelledby="case-title">
-    <article>
-      <button class="close" data-close aria-label="Cerrar caso de estudio">Cerrar</button>
-      <h2 id="case-title">Turnos: caso de estudio</h2>
-      <h3>Problema</h3>
-      <p>En el centro de salud, 7 de cada 10 turnos se pedían por teléfono y la línea estaba ocupada casi todo el día.
-      </p>
-      <h3>Proceso</h3>
-      <p>Entrevisté a 4 personas, comparé 3 sistemas de turnos y ordené el contenido con card sorting. Dibujé wireframes
-        mobile y desktop y armé el prototipo en Figma.</p>
-      <h3>Solución</h3>
-      <p>Un flujo de 3 pasos (especialidad, día, confirmación) con botones grandes, contraste AA y recordatorio por
-        WhatsApp.</p>
-      <h3>Resultado</h3>
-      <p>En el test con 5 personas, todas reservaron sin ayuda. El tiempo bajó de 95 a 38 segundos. Cambié la etiqueta
-        «Prestación» por «Especialidad» porque 3 personas dudaron.</p>
-    </article>
-  </dialog>
-
   <footer class="site-footer">
     <div class="wrap">
-      <p>© 2026 Sofía Caire. Hecho con HTML y CSS, publicado en GitHub Pages.</p>
+      <p>© 2026 Sofía Caire. Hecho con HTML y CSS, publicado en Netlify.</p>
       <nav aria-label="Pie de página">
         <a href="#skills">Skills</a><a href="#projects">Proyectos</a><a href="#experience">Trayectoria</a><a
           href="#about">Sobre mí</a><a href="#contact">Contacto</a>
@@ -294,10 +306,6 @@
       nav.addEventListener('click', function (e) {
         if (e.target.tagName === 'A') { btn.setAttribute('aria-expanded', 'false'); nav.classList.remove('open'); }
       });
-      var d = document.getElementById('case');
-      document.querySelector('[data-open]').addEventListener('click', function () { d.showModal(); });
-      d.querySelector('[data-close]').addEventListener('click', function () { d.close(); });
-      d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
     })();
   </script>
 </body>
