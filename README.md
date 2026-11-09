@@ -5,7 +5,7 @@ Portfolio personal de Diseño UX/UI desarrollado como proyecto académico para l
 ## Información general
 - **Sitio:** https://sofiacaire-portfolio.netlify.app/
 - **Repositorio:** https://github.com/sofiacaire/TP6-blogPersonal.git
-- **Figma:** [enlace privado con permiso de visualización](https://www.figma.com/design/FRi9pVB4T7rvMJNnYQiiC1/Portfolio-UX-UI-%E2%80%94-Sof%C3%ADa-Caire?node-id=5-2&t=cWts8haqMdtqjDqN-1)
+- **Figma:** [Portfolio UX/UI — Sofía Caire](https://www.figma.com/design/FRi9pVB4T7rvMJNnYQiiC1/Portfolio-UX-UI-%E2%80%94-Sof%C3%ADa-Caire?node-id=1-2&p=f&t=ntgb7T9XYHHRLAbc-0)
 - **Stack:** HTML5, CSS3 y JavaScript vanilla.
 - **Arquitectura:** sitio estático sin framework, con variables en `:root`, estilos reutilizables y estructura semántica.
 - **Tipografías:** Bricolage Grotesque y Public Sans (Google Fonts, `display=swap`).
@@ -21,7 +21,7 @@ La interfaz incluye:
 - estructura visual pensada para exhibir un portfolio académico y personal
 
 ## Proceso de diseño
-El proceso UX/UI está documentado en el [archivo de Figma](https://www.figma.com/design/FRi9pVB4T7rvMJNnYQiiC1/Portfolio-UX-UI-%E2%80%94-Sof%C3%ADa-Caire?node-id=5-2&t=cWts8haqMdtqjDqN-1), disponible para visualizar. Incluye:
+El proceso UX/UI está documentado en el [archivo de Figma](https://www.figma.com/design/FRi9pVB4T7rvMJNnYQiiC1/Portfolio-UX-UI-%E2%80%94-Sof%C3%ADa-Caire?node-id=1-2&p=f&t=ntgb7T9XYHHRLAbc-0), disponible para visualizar. Incluye:
 - protopersona y benchmark
 - test de usabilidad con 3 personas y cambios aplicados
 - moodboard y concepto visual
