@@ -1,17 +1,17 @@
 # Portfolio · Sofía Caire (Diseño UX-UI 2026, FCyT)
 
-- **Sitio:** https://TU-USUARIO.github.io/portfolio/
+- **Sitio:** https://sofiacaire-portfolio.netlify.app/
+- **GitHub:** https://github.com/sofiacaire/TP6-blog.git
 - **Figma:** (pegá acá el link con permiso de visualización)
 - **Stack:** HTML5 + CSS3 (variables en `:root`), JavaScript vanilla solo para el menú mobile y el modal. Sin frameworks.
 - **Fuentes:** Bricolage Grotesque y Public Sans (Google Fonts, `display=swap`).
 - **Templates:** ninguno; diseño propio.
 - **Uso de IA:** el HTML/CSS base y los textos de ejemplo se generaron con Claude (Anthropic). Los revisé, reemplacé el contenido por el mío y verifiqué contraste y teclado con Lighthouse y WAVE. *(Editá esto con lo que realmente hiciste.)*
 
-## Despliegue (GitHub Pages)
-1. Subí el repo a GitHub (público).
-2. Settings → Pages → Source: rama `main`, carpeta `/ (root)`.
-3. Cada `git push` a `main` publica automáticamente.
-4. Pegá la URL final acá y en la descripción del repo.
+## Despliegue (Netlify)
+- **URL de producción:** https://sofiacaire-portfolio.netlify.app/
+- Sitio estático publicado desde la raíz del repositorio; no requiere comando de build.
+- Si el repositorio está conectado a Netlify, cada `git push` a la rama configurada dispara un nuevo despliegue.
 
 ## Pendientes antes de entregar
 - Reemplazar nombre, textos, links (`TU-USUARIO`), email y números por los reales.
