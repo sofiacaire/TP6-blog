@@ -7,6 +7,7 @@
 - **Fuentes:** Bricolage Grotesque y Public Sans (Google Fonts, `display=swap`).
 - **Templates:** ninguno; diseño propio.
 - **Uso de IA:** el HTML/CSS base y los textos de ejemplo se generaron con Chat GPT. Los revisé, reemplacé el contenido por el mío y verifiqué contraste y teclado con Lighthouse y WAVE.
+También asistió en la estructura del archivo de Figma (design system, wireframes y prototipo).
 
 ## Despliegue (Netlify)
 - **URL de producción:** https://sofiacaire-portfolio.netlify.app/
@@ -14,8 +15,10 @@
 - Si el repositorio está conectado a Netlify, cada `git push` a la rama configurada dispara un nuevo despliegue.
 - Netlify sirve `404.html` para las rutas que no existen.
 
-## Pendientes antes de entregar
-
 
 ## Capturas
+- **Fidelidad: Figma vs sitio web**
 
+
+- **Performance: Lighhouse mobile**
+assets/lighthouse.webp
